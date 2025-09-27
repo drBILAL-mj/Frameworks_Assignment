@@ -11,8 +11,8 @@ df = pd.read_csv("metadata_sample_cleaned.csv")
 df['publish_time'] = pd.to_datetime(df['publish_time'], errors='coerce')
 df['year'] = df['publish_time'].dt.year
 
-st.title("CORD-19 Data Explorer")
-st.write("Explore COVID-19 research metadata interactively.")
+st.title("Dr Bilal Academy \nResearch & Analytics Department.")
+st.write("COVID-19 Exploration Study on September 2025.")
 
 # Sidebar filter
 year_range = st.slider("Select Year Range", int(df['year'].min()), int(df['year'].max()), (2020, 2021))
@@ -50,9 +50,9 @@ st.write(filtered.head(20))\
 # Part 5: Documentation & Reflection in Streamlit
 st.title("📄 Documentation and Reflection")
 st.subheader(
-    "Department Research & Data Analysis\n"
+    "Department of Research & Analytics\n"
     "College of Business Education, Tanzania\n"
-    "\n2025/09/23"
+    "\n2025/09/27"
 )
 
 # --- Findings Summary ---
